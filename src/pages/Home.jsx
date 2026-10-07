@@ -1,179 +1,75 @@
-import React from "react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import {
-  Building2,
-  Sparkles,
-  BarChart3,
-  FileOutput,
-} from "lucide-react";
-
-const services = [
-  {
-    icon: <Building2 size={32} />,
-    title: "Hospital Layout Generation",
-    description:
-      "Generate optimized hospital floor plans based on healthcare infrastructure requirements.",
-  },
-  {
-    icon: <Sparkles size={32} />,
-    title: "AI Floor Plan Visualization",
-    description:
-      "Create realistic AI-generated hospital layouts with advanced visualization.",
-  },
-  {
-    icon: <BarChart3 size={32} />,
-    title: "Planning Analytics",
-    description:
-      "Monitor space utilization and evaluate hospital planning performance.",
-  },
-  {
-    icon: <FileOutput size={32} />,
-    title: "Layout Export Services",
-    description:
-      "Export optimized floor plans in PDF and PNG formats.",
-  },
-];
 
 function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center px-6 py-12 text-[#f5f7fa] overflow-hidden">
+    <main className="relative flex min-h-screen items-center overflow-hidden px-4 pb-10 pt-28 sm:px-6 sm:pt-28 md:px-10 md:pt-24">
+      <div className="pointer-events-none absolute -left-32 top-10 h-80 w-80 rounded-full bg-sky-400/10 blur-[100px]" />
 
-      <div
-        className="absolute inset-0 bg-cover bg-center blur-[1px] scale-105"
-        style={{ backgroundImage: "url('/Bgd.png')" }}
-      ></div>
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-emerald-400/10 blur-[110px]" />
 
-      <div className="absolute inset-0 bg-[#10284E]/90"></div>
+      <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-sky-300/10 blur-[100px]" />
 
-      <div className="relative flex flex-col items-center w-full max-w-6xl gap-6 z-10">
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl items-center justify-center">
+        <section className="grid w-full items-center gap-10 md:grid-cols-2 md:gap-14 lg:gap-20">
+          <div className="flex justify-center">
+            <div className="relative flex h-56 w-56 items-center justify-center sm:h-72 sm:w-72 md:h-80 md:w-80">
+              <div className="absolute inset-4 rounded-full border border-sky-300/30 bg-slate-900/20 backdrop-blur-sm" />
 
-        <section className="flex flex-col md:flex-row items-center justify-between w-full gap-5">
+              <div className="absolute inset-10 rounded-full border border-emerald-300/25" />
 
-          <div className="flex justify-center md:w-1/2">
+              <div className="absolute inset-16 rounded-full bg-linear-to-br from-sky-400/15 to-emerald-400/15 blur-2xl" />
 
-            <img
-              src="/Logo.png"
-              alt="MediPlan Logo"
-              className="w-40 h-40 md:w-56 md:h-56 object-contain"
-            />
-
+              <img
+                src="/MediPlan.png"
+                alt="MediPlan Logo"
+                className="relative z-10 h-36 w-36 object-contain drop-shadow-[0_10px_30px_rgba(91,155,213,0.45)] sm:h-48 sm:w-48 md:h-56 md:w-56"
+              />
+            </div>
           </div>
 
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-xs font-semibold tracking-wide text-sky-300 backdrop-blur-md">
+              <Sparkles size={14} />
+              AI-Powered Hospital Planning
+            </span>
 
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-5 md:w-1/2">
-
-            <h1 className="text-4xl md:text-5xl font-bold text-[#d9ffff]">
+            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               MediPlan
             </h1>
 
-
-            <p className="text-lg md:text-xl text-[#ffffff]">
+            <h2 className="mt-3 max-w-xl text-lg font-semibold text-sky-300 sm:text-xl md:text-2xl">
               Intelligent Hospital Floor Planning System
+            </h2>
+
+            <p className="mt-4 max-w-xl text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">
+              A smart hospital planning platform designed to simplify
+              healthcare infrastructure planning by creating efficient,
+              organized, and optimized hospital floor layouts based on
+              planning requirements.
             </p>
 
-
-            <p className="text-sm md:text-base text-[#b4c9d1] max-w-xl">
-              An AI-powered healthcare infrastructure planning platform that
-              generates optimized hospital floor plans using CNN, Graphormer,
-              and GAN architectures to improve workflow, accessibility, and
-              operational efficiency.
+            <p className="mt-3 max-w-xl text-sm leading-6 text-slate-400">
+              Plan spaces, organize hospital departments, visualize layouts,
+              and make better planning decisions through an intelligent and
+              user-friendly system.
             </p>
-
 
             <Link
-              to="/get-started"
-              className="mt-3 px-6 py-3 rounded-xl text-sm text-[#000000] bg-linear-to-r from-[#004955] to-[#105E60] hover:from-[#105E60] hover:to-[#14365C] transition-all duration-300"
+              to="/dashboard"
+              className="group mt-6 inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-sky-500 to-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-950/30 transition duration-300 hover:-translate-y-1 hover:from-sky-400 hover:to-emerald-400 hover:shadow-xl"
             >
               Explore Now
+
+              <ArrowRight
+                size={17}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
             </Link>
-
           </div>
-
         </section>
-
-
-        <section className="w-full max-w-6xl">
-
-          <h2 className="text-3xl mb-8 text-center text-[#7ee7e7]">
-            Our Services
-          </h2>
-
-
-          <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
-
-            {services.map((service, index) => (
-
-              <div
-                key={index}
-                className="group p-5 rounded-2xl bg-[#10284E]/50 border border-[#6B7D7F]/30 backdrop-blur-xl hover:bg-linear-to-br hover:from-[#004955]/80 hover:to-[#14365C]/80 hover:border-[#00d9d9] hover:-translate-y-1 transition-all duration-300 flex flex-col items-center gap-3 text-center"
-              >
-
-                <div className="text-[#7ee7e7] group-hover:text-white group-hover:scale-110 transition duration-300">
-                  {service.icon}
-                </div>
-
-
-                <p className="text-lg text-[#d9ffff] group-hover:text-white transition">
-                  {service.title}
-                </p>
-
-
-                <p className="text-xs md:text-sm text-[#b4c9d1] group-hover:text-white transition">
-                  {service.description}
-                </p>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </section>
-
-
-        <section className="w-full max-w-6xl">
-
-          <h2 className="text-3xl mb-8 text-center text-[#7ee7e7]">
-            AI Architecture Workflow
-          </h2>
-
-
-          <div className="grid md:grid-cols-5 gap-4">
-
-            {[
-              "Hospital Requirements",
-              "CNN Prediction",
-              "Graphormer Analysis",
-              "GAN Generation",
-              "Optimized Layout",
-            ].map((item, index) => (
-
-              <div
-                key={index}
-                className="group p-5 rounded-2xl bg-[#10284E]/50 border border-[#6B7D7F]/30 backdrop-blur-xl text-center hover:border-[#00d9d9] transition"
-              >
-
-                <h3 className="text-[#7ee7e7] font-semibold">
-                  Step {index + 1}
-                </h3>
-
-
-                <p className="text-sm text-[#b4c9d1] mt-2">
-                  {item}
-                </p>
-
-              </div>
-
-            ))}
-
-          </div>
-
-        </section>
-
-
       </div>
-
-    </div>
+    </main>
   );
 }
 
