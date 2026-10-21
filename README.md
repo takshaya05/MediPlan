@@ -2,37 +2,32 @@
 
 ## Tagline
 
-**Intelligent Hospital Floor Planning System**
+Intelligent Hospital Floor Planning System
 
 ## Overview
 
-MediPlan is an AI-powered hospital floor planning platform designed to generate optimized hospital layouts based on infrastructure requirements. The system helps organize departments, rooms, and functional spaces efficiently while providing AI-based layout recommendations, visualization, analytics, and export capabilities for better hospital infrastructure planning.
+MediPlan is an AI-powered hospital floor planning platform that generates optimized hospital layouts based on infrastructure requirements, with smart space planning, visualization, analytics, and AI-based recommendations.
 
 ## Features
 
-* **Hospital Layout Generation:** Generate optimized hospital floor plans based on infrastructure requirements.
-* **AI Floor Plan Visualization:** Create and visualize realistic AI-generated hospital layouts.
-* **Smart Space Planning:** Automatically organize departments, rooms, and functional spaces for efficient space utilization.
-* **Planning Analytics:** Analyze space utilization, department allocation, and overall planning performance.
-* **AI Recommendations & Export:** Provide intelligent layout recommendations and allow users to save or export generated floor plans.
+- **Hospital Layout Generation:** Generate optimized hospital floor plans based on infrastructure requirements.
+- **AI Floor Plan Visualization:** Create and visualize AI-generated hospital layouts.
+- **Smart Space Planning:** Organize departments, rooms, and functional spaces efficiently.
+- **Planning Analytics:** Analyze space utilization, department allocation, and planning performance.
+- **AI Recommendations & Export:** Get intelligent layout suggestions and save or export generated floor plans.
 
 ## Tech Stack
 
-* **React.js:** Build the interactive user interface and hospital planning dashboard.
-* **Vite:** Provide fast development and optimized frontend builds.
-* **JavaScript:** Implement application logic, interactions, and planning functionality.
-* **Tailwind CSS:** Design responsive and consistent user interfaces.
-* **Node.js:** Support backend services, server-side functionality, and API integration.
+- **React.js:** Build the interactive user interface and planning dashboard.
+- **Vite:** Enable fast development and optimized frontend builds.
+- **JavaScript:** Implement application logic and planning functionality.
+- **CSS3:** Design responsive layouts and style user interface components.
+- **Node.js:** Support backend services, server-side functionality, and API integration.
 
-## Project Structure
+## How to Use
 
-* src/
-  * components/
-    * header/
-    * footer/
-  * pages/
-    * home/
-    * about/
-    * dashboard/
-    * dashboardContent/
-    * services/
+1. **Enter Requirements:** Provide hospital infrastructure and space requirements.
+2. **Generate Layout:** Create an optimized hospital floor plan.
+3. **Visualize the Plan:** View the generated layout and department arrangement.
+4. **Analyze Space:** Review space utilization and department allocation analytics.
+5. **Export & Save:** Apply AI recommendations and save or export the final floor plan.
